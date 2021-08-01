@@ -21,14 +21,33 @@ p {
     margin: 0;
 }
 
+section {
+    padding: 7em 0;
+}
+
 .container {
     width: 85%;
     max-width: 65em;
     margin: 0 auto;
 }
 
-.spacing
+//reusable layout
+.split {
+    display: flex;
+    gap: 2em;
+    flex-wrap: wrap;
+    justify-content: center;
 
+    & > * {
+        flex-basis: 30%;
+        min-width: 15em;
+    }
+}
+//reusable style
+.spacing > * + * {
+    margin-top:var(--spacer, 2rem)
+}
+//reusable component
 .btn {
     display: inline-block;
     text-decoration: none;
@@ -55,6 +74,14 @@ p {
     font-size: clamp(3rem, 5vw, 4.5rem);
     line-height: 1;
     text-transform:uppercase;
+}
+
+.section-title {
+    text-align: center;
+    font-size: clamp(2.5rem, calc(5vw + 1rem), 4rem);
+    line-height: 1;
+    color: #17353d;
+    margin-bottom: 5rem;
 }
 
 .hero {
