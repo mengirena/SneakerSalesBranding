@@ -27,7 +27,7 @@ p {
   margin: 0 auto;
 }
 
-.btn {
+.spacing .btn {
   display: inline-block;
   text-decoration: none;
   color: var(--clr-text, white);
@@ -54,7 +54,16 @@ p {
 }
 
 .hero {
+  color: white;
   text-align: center;
+  padding: 15em 0;
+  background: #222;
+}
+@supports (background-blend-mode: multiply) {
+  .hero {
+    background: url(../img/shoe-3.png), radial-gradient(#444, #111);
+    background-blend-mode: multiply;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
