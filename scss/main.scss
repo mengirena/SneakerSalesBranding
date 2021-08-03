@@ -141,3 +141,40 @@ section {
         }
     }
 }
+
+.product {
+    background: radial-gradient(var(--clr-outer, yellow), var(--clr-inner, lightblue));
+    padding: 3em;
+    border-radius: 1em;
+    margin-bottom: 3em;
+    text-align:center;
+
+    &__title{
+        font-size: 4rem;
+        line-height: 1.1;
+        color: #fff;
+        text-shadow:0 0 .2em rgba(#000, .2);
+    }
+}
+
+.hero {
+    --clr-accent:#faa700;
+}
+
+.shoe-red{
+    --clr-outer:#faa700;
+    --clr-inner:#e48d00;
+    --clr-accent:#a1173c;
+}
+
+.shoe-white{
+    --clr-outer:#eac886;
+    --clr-inner:#fce4b3;
+    --clr-accent:#2f3858;
+}
+
+.shoe-blue{
+    --clr-outer:#6dd5ed;
+    --clr-inner:#2193b0;
+    --clr-accent:black;
+}
