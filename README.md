@@ -63,3 +63,7 @@ Using padding:100%;
 ### Transform createa stacking within the element block
 
 ### Stacking context
+
+### Custom property
+
+The custom property is inherited so we should provide the value at the class or before. 
