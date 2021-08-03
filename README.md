@@ -49,7 +49,17 @@ In css, use it like this:
 
     }
     element{
-        
+
     }
 }
 ```
+
+
+### padding and margin percentage is based on the width
+
+### Trick to make a real square
+Using padding:100%;
+
+### Transform createa stacking within the element block
+
+### Stacking context
