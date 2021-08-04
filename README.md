@@ -66,4 +66,8 @@ Using padding:100%;
 
 ### Custom property
 
-The custom property is inherited so we should provide the value at the class or before. 
+The custom property is inherited so we should provide the value at the class or before.
+
+### How to make text wrap around a defined shape
+
+`shape-outside` property can achieve that. The shape can be the box sizing value, basic shapes like circle, ellipse, polygon, path or image. 
