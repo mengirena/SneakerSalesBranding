@@ -97,7 +97,7 @@ section {
   background: #eee;
 }
 .featured__item {
-  display: block;
+  display: grid;
   position: relative;
   transform: scale(0.85);
   transition: transform 250ms ease-in-out;
@@ -105,6 +105,7 @@ section {
   color: #333;
   text-align: center;
   line-height: 1.2;
+  grid-template-rows: 80% 20%;
 }
 .featured__item:hover, .featured__item:focus {
   transform: scale(1);
@@ -137,14 +138,43 @@ section {
   background: radial-gradient(var(--clr-outer, yellow), var(--clr-inner, lightblue));
   padding: 3em;
   border-radius: 1em;
-  margin-bottom: 3em;
+  margin-bottom: 5em;
   text-align: center;
 }
 .product__title {
-  font-size: 4rem;
-  line-height: 1.1;
+  font-size: clamp(3rem, calc(5vw + 1rem), 5rem);
+  text-transform: uppercase;
+  line-height: 1;
   color: #fff;
   text-shadow: 0 0 0.2em rgba(0, 0, 0, 0.2);
+}
+.product__image {
+  margin: -5em 0 0 0;
+}
+@media (min-width: 45em) {
+  .product {
+    text-align: left;
+    margin-bottom: 9em;
+  }
+  .product__title {
+    margin: 0;
+  }
+  .product__image {
+    float: right;
+    width: 60%;
+    shape-outside: url(../img/shoe-1.png);
+    shape-margin: 1em;
+    margin: 0 -5em 0 0;
+  }
+  .product.shoe-left {
+    text-align: right;
+  }
+  .product.shoe-left .product__image {
+    float: left;
+    shape-outside: url(../img/shoe-2.png);
+    margin: 0 0 0 -5em;
+    shape-margin: 2em;
+  }
 }
 
 .hero {
